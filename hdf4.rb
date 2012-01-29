@@ -5,7 +5,7 @@ def fortran?
 end
 
 class Hdf4 < Formula
-  url 'http://www.hdfgroup.org/ftp/HDF/HDF_Current/src/hdf-4.2.6.tar.bz2'
+  url 'http://www.hdfgroup.org/ftp/HDF/releases/HDF4.2.6/src/hdf-4.2.6.tar.bz2'
   md5 'eed281ded7f81f6ba1a3b1b1d5109bfe'
   homepage 'http://www.hdfgroup.org'
 
