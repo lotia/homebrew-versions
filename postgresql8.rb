@@ -3,8 +3,8 @@ require 'hardware'
 
 class Postgresql8 < Formula
   homepage 'http://www.postgresql.org/'
-  url 'http://ftp.postgresql.org/pub/source/v8.4.10/postgresql-8.4.10.tar.gz'
-  md5 'c2776cf3da7923ac4af0ca5c164016ea'
+  url 'http://ftp.postgresql.org/pub/source/v8.4.11/postgresql-8.4.11.tar.gz'
+  md5 '413b8ae9ae6e7f053e2a992e068af63e'
 
   depends_on 'readline'
   depends_on 'libxml2' if MACOS_VERSION < 10.6 # Leopard libxml is too old
