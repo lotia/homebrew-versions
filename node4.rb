@@ -16,7 +16,7 @@ class Node4 < Formula
   skip_clean :all
 
   def options
-    [["--debug", "Build with debugger hooks."]]
+    [["--enable-debug", "Build with debugger hooks."]]
   end
 
   def install
@@ -26,7 +26,7 @@ class Node4 < Formula
     end
 
     args = ["--prefix=#{prefix}"]
-    args << "--debug" if ARGV.include? '--debug'
+    args << "--debug" if ARGV.include? '--enable-debug'
 
     system "./configure", *args
     system "make install"
