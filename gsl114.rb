@@ -1,8 +1,9 @@
 require 'formula'
 
 class Gsl114 < Formula
-  url 'http://ftpmirror.gnu.org/gsl/gsl-1.14.tar.gz'
   homepage 'http://www.gnu.org/software/gsl/'
+  url 'http://ftpmirror.gnu.org/gsl/gsl-1.14.tar.gz'
+  mirror 'http://ftp.gnu.org/gnu/gsl/gsl-1.14.tar.gz'
   md5 'd55e7b141815412a072a3f0e12442042'
 
   def options
