@@ -105,7 +105,7 @@ See:
 
 
 If this is your first install, create a database with:
-  initdb #{var}/postgres
+  initdb #{var}/postgres9
 
 If this is your first install, automatically load on login with:
   mkdir -p ~/Library/LaunchAgents
@@ -118,10 +118,10 @@ If this is an upgrade and you already have the org.postgresql.postgres.plist loa
   launchctl load -w ~/Library/LaunchAgents/org.postgresql.postgres.plist
 
 Or start manually with:
-  pg_ctl -D #{var}/postgres -l #{var}/postgres/server.log start
+  pg_ctl -D #{var}/postgres9 -l #{var}/postgres9/server.log start
 
 And stop with:
-  pg_ctl -D #{var}/postgres stop -s -m fast
+  pg_ctl -D #{var}/postgres9 stop -s -m fast
 
 
 Some machines may require provisioning of shared memory:
@@ -155,9 +155,9 @@ To install gems without sudo, see the Homebrew wiki.
   <array>
     <string>#{bin}/postgres</string>
     <string>-D</string>
-    <string>#{var}/postgres</string>
+    <string>#{var}/postgres9</string>
     <string>-r</string>
-    <string>#{var}/postgres/server.log</string>
+    <string>#{var}/postgres9/server.log</string>
   </array>
   <key>RunAtLoad</key>
   <true/>
@@ -166,7 +166,7 @@ To install gems without sudo, see the Homebrew wiki.
   <key>WorkingDirectory</key>
   <string>#{HOMEBREW_PREFIX}</string>
   <key>StandardErrorPath</key>
-  <string>#{var}/postgres/server.log</string>
+  <string>#{var}/postgres9/server.log</string>
 </dict>
 </plist>
     EOPLIST
